@@ -10,11 +10,12 @@ function checkCount(){
     if(countsNo <= 3){
         window.document.getElementById("emoji" + countsNo).style.display = 'inline-block';
         document.getElementById("reply").innerHTML = " ";
+        window.document.getElementById("heart").style.display = 'none';
     }else{
         document.getElementById("reply").innerHTML = "Tudo bem :)";
+        clearTimeout(timerFunc);
+        timerFunc = setTimeout(finalMessage, 5000);
     }
-    window.document.getElementById("heart").style.display = 'none';
-    clearTimeout(timerFunc);
 }
 
 function replyYes(){
