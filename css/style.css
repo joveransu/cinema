@@ -1,2 +1,44 @@
 @charset "UTF-8";
 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(240, 238, 238);
+    font-weight: bold;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+img {
+    width: 50px;
+    display: none;
+}
+
+#btn-yes{
+    background-color: green;
+}
+
+#btn-no {
+    background-color: red;
+}
+
+/* Animations */
+
+button:hover {
+    border: 2px solid rgb(66, 66, 66);
+    transition: .5s;
+}
+
+
+button#btn-yes:hover{
+    font-size: 2em;
+}
+
+button#btn-no:hover{
+    font-size: 5px;
+}
