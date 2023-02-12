@@ -14,7 +14,7 @@ function checkCount(){
     }else{
         document.getElementById("reply").innerHTML = "Tudo bem :)";
         clearTimeout(timerFunc);
-        timerFunc = setTimeout(finalMessage, 5000);
+        timerFunc = setTimeout(finalMessage, 2000);
     }
 }
 
@@ -25,5 +25,5 @@ function replyYes(){
     }
     window.document.getElementById("heart").style.display = 'inline-block';
     document.getElementById("reply").innerHTML = "Serio? <3";
-    timerFunc = setTimeout(finalMessage, 5000);
+    timerFunc = setTimeout(finalMessage, 2000);
 }
